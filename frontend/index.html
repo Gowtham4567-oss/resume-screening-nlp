@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>AI Resume Screening System</h1>
+
+<!-- 🔐 LOGIN SECTION -->
+<h2>Login</h2>
+<input type="text" id="user" placeholder="Enter Username">
+<input type="password" id="pass" placeholder="Enter Password">
+<br>
+<button onclick="login()">Login</button>
+
+<!-- 📄 RESUME UPLOAD -->
+<h2>Upload Resume</h2>
+<input type="file" id="file">
+<br>
+<button onclick="upload()">Analyze Resume</button>
+
+<pre id="output"></pre>
+
+<!-- 💬 CHATBOT -->
+<h2>Chatbot</h2>
+<input type="text" id="chat" placeholder="Ask something...">
+<br>
+<button onclick="sendChat()">Send</button>
+
+<pre id="chatOut"></pre>
+
+<!-- 📊 ADMIN PANEL -->
+<h2>Admin Dashboard</h2>
+<button onclick="loadUsers()">View Users</button>
+
+<pre id="users"></pre>
+
+<script src="script.js"></script>
+
+</body>
+</html>
